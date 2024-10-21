@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Wark-BIO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard de Wark-BIO</h1>
+        <button id="login-discord">Iniciar sesión con Discord</button>
+    </header>
+
+    <section id="profile-settings" class="hidden">
+        <h2>Personaliza tu Perfil</h2>
+        <form id="profile-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="description">Descripción:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <label for="profile-pic">Foto de Perfil (URL):</label>
+            <input type="url" id="profile-pic" name="profile-pic">
+
+            <label for="background-color">Color de Fondo:</label>
+            <input type="color" id="background-color" name="background-color">
+
+            <label for="gradient-color">Color Degradado:</label>
+            <input type="color" id="gradient-color" name="gradient-color">
+
+            <button type="submit">Guardar Cambios</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Wark-BIO - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
